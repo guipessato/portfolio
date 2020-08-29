@@ -1,0 +1,100 @@
+.img-brand {
+    height: 32px;
+    width: auto;
+}
+
+.img-logo-rodape {
+    height: auto;
+    width: 256px;
+}
+
+.img-logo-cabeca {
+    height: auto;
+    width: 512px;
+}
+
+.img-carousel {
+    height: 120%;
+    width: auto;
+}
+
+.malitoCont {
+    color: black;
+}
+
+.malitoCont:hover {
+    color: black;
+    font: 16px;
+    text-decoration: none;
+
+}
+
+.malito {
+    color: white;
+}
+
+.malito:hover {
+    color: white;
+    font: 16px;
+    text-decoration: none;
+
+}
+
+.telefone {
+    text-decoration: none;
+    color: black;
+}
+
+.telefone:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.telefoneRodaPe {
+    text-decoration: none;
+    color: white;
+}
+
+.telefoneRodaPe:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.box {
+    height: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.img-centro {
+    height: auto;
+}
+
+.fixa {
+    min-height: 400px;
+    background-color: black;
+    /* background-image: url('../img/imagens/teste.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .paralax {
+    /* The image used */
+    background-image: url("../img/imagens/1.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .corNav{
+    background-color: black;
+  }

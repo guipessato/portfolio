@@ -1,0 +1,273 @@
+:root {
+    /* Variavel CSS */
+    --color-texto: #323E40;
+    --color-texto-branco: #ffffff;
+    --color-amarelo: #F28B0C;
+    --color-laranja: #F25C05;
+    -color-vermelho: #BF2604;
+    --color-vinho: #730202;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: var(--color-texto);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* menu */
+.menu-bg {
+    background: var(--color-vinho);
+    border-bottom: solid 5px var(--color-amarelo);
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    /*quebrando linha*/
+    flex-wrap: wrap;
+    /*alinha com espaço*/
+    justify-content: space-between;
+    /*alinhando ao centro*/
+    align-items: center;
+}
+
+.menu-logo {
+    color: var(--color-amarelo);
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/*qiebrando a linhas do ul Menu*/
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: var(--color-texto-branco);
+}
+
+/*propriedades da font dos link menu*/
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.menu-nav a:hover {
+    color: var(--color-amarelo);
+    border-bottom: solid 5px var(--color-amarelo);
+}
+
+/*header-img*/
+.container-img .img-header {
+    width: 100%;
+    max-height: 750px;
+    display: block;
+
+}
+
+/*Historia*/
+.titulo-historia {
+    padding-top: 30px;
+    font-size: 2em;
+    color: var(--color-vinho);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txt-historia {
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*CARDAPIO PEDIDO*/
+.container-cardapio-pedido {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.titulo-cardapio,
+.titulo-pedido {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-vinho);
+}
+
+.desc-cardapio,
+.desc-pedido {
+    text-align: center;
+    font-size: 1em;
+}
+
+.btn-cardapio,
+.btn-pedido {
+    font-size: 1em;
+    font-weight: bold;
+    background: var(--color-laranja);
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px 10px;
+    transition: 1s;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.btn-cardapio:hover,
+.btn-pedido:hover {
+    background: var(--color-amarelo);
+    color: var(--color-vinho);
+}
+
+/*Galeria*/
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    max-width: 480px;
+    display: block;
+    padding: 0 5px;
+}
+
+.img-galeria-full {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px 5px;
+    padding-top: 5px;
+}
+
+/*contato*/
+.titulo-contato {
+    padding-top: 24px;
+    text-align: center;
+    color: var(--color-vinho);
+}
+
+.end-tel {
+    text-align: center;
+}
+
+.end-tel a {
+    color: var(--color-texto);
+}
+
+/*map*/
+.container-map {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px 5px;
+}
+
+.container-map .map {
+    border: 0;
+    width: 100%;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    background: var(--color-vinho);
+    height: 120px;
+    align-items: center;
+    border-top: solid 5px var(--color-amarelo);
+    margin-top: 24px;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--color-texto-branco);
+}
+
+/*responsividade*/
+@media(max-width: 970px) {
+    .menu-logo {
+        text-align: center;
+    }
+
+    .container-cardapio-pedido {
+        max-width: 960px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    /*galeria*/
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img-galeria {
+        max-width: 100%;
+        display: block;
+        padding: 5px 5px;
+    }
+}
+
+@media(max-width: 1024px) {
+    /*CARDAPIO PEDIDO*/
+    .container-cardapio-pedido {
+        max-width: 960px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 24px;
+    }
+}
