@@ -134,7 +134,7 @@ img {
     border-radius: 50%;
 }
 
-.btn-cv{
+.btn-cv {
     display: flex;
     padding: 6px 24px;
     margin: 12px;
@@ -143,15 +143,18 @@ img {
     color: var(--color-escura-secundaria);
     background: transparent;
     border: 2px solid var(--color-amarelo);
-    border-radius: 10px ;
+    border-radius: 10px;
     transition: 0.5s;
+    max-width: 230px;
+
 }
 
-.btn-cv:hover{
-
+.btn-cv:hover {
     background: var(--color-amarelo);
 }
-
+.fa-file-download{
+    margin-right: 10px;
+}
 /*PROJETOS*/
 .container-projetos {
     display: flex;
@@ -364,7 +367,17 @@ img {
 
     .texto-sobre-desenvolvedor {
         padding-top: 12px;
+
+    }
+
+    .texto-desenvolvedor {
+        align-items: center;
         text-align: center;
+
+    }
+
+    .btn-cv {
+        margin: 0 auto;
     }
 
     .container {
@@ -381,4 +394,6 @@ img {
     .img-portifolio {
         margin: 12px 0px;
     }
+
+
 }
