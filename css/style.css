@@ -286,6 +286,31 @@ img {
 
 }
 
+/*footer*/
+.footer {
+    display: flex;
+    background: var(--cor-escura);
+    height: 100px;
+    align-items: center;
+}
+
+.container-footer {
+    flex: 1;
+    text-align: center;
+
+}
+
+.btn-social {
+    color: var(--color-texto-branco);
+    font-size: 4em;
+    padding: 0 12px;
+    transition: 1s;
+}
+
+.btn-social:hover {
+    color: var(--color-amarelo);
+}
+
 @media(max-width: 1080px) {
     .container-desenvolvedor {
         max-width: 1080px;
