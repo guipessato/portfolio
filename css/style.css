@@ -112,7 +112,6 @@ img {
 /*Desenvolvedor*/
 .desenvolvedor {
     background: var(--color-cinza);
-    padding: 12px 6px;
 }
 
 .container-desenvolvedor {
@@ -121,6 +120,7 @@ img {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    padding: 12px 0;
 }
 
 
@@ -132,6 +132,26 @@ img {
     max-width: 256px;
     height: auto;
     border-radius: 50%;
+}
+
+/*PROJETOS*/
+.container-projetos {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 6px;
+}
+
+.img-portifolio {
+    border-radius: 5px;
+    margin: 0 12px;
+    border-top: 10px solid var(--cor-escura);
+    border-bottom: 10px solid var(--cor-escura);
+    transition: 0.5s;
+}
+
+.img-portifolio:hover {
+    border-bottom: 10px solid var(--color-dourado);
+    border-top: 10px solid var(--color-dourado);
 }
 
 /*HABILIDADE*/
@@ -326,4 +346,9 @@ img {
         padding-top: 6px;
         text-align: center;
     }
+
+    .container {
+        padding: 12px 6px;
+    }
+
 }
