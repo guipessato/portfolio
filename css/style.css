@@ -1,0 +1,304 @@
+:root {
+    /* Variavel CSS */
+    --color-texto: ##313540;
+    --color-texto-branco: #ffffff;
+    --cor-escura: #1E1E20;
+    --color-escura-secundaria: #2A2C2B;
+    --color-cinza: #f8f8f8;
+    --color-amarelo: #F2BE22;
+    --color-dourado: #BF9B30;
+    --color-dourado-secundario: #8C793E;
+    --color-vermelho: #DC3522;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: var(--color-texto);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 12px 0;
+}
+
+.titulo-padrao {
+    text-align: left;
+    color: var(--cor-escura);
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 5px solid var(--color-amarelo);
+    transition: 1s;
+}
+
+.titulo-padrao:hover {
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 5px solid var(--color-dourado);
+}
+
+/*cabecalho*/
+.cabeçalho {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/capa.jpg");
+    background-size: cover;
+}
+
+.cabeçalho img {}
+
+.container-cabecalho {
+    flex-direction: column;
+    max-width: 1080px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.header-nome {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color-texto-branco);
+}
+
+.titulo-portfolio,
+.formacao {
+    font-weight: bold;
+    color: var(--color-amarelo);
+}
+
+.titulo-portfolio {
+    font-size: 1.25em;
+}
+
+.formacao {
+    font-size: 1 em;
+}
+
+/*Desenvolvedor*/
+.desenvolvedor {
+    background: var(--color-cinza);
+    padding: 12px 6px;
+}
+
+.container-desenvolvedor {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.texto-sobre-desenvolvedor {
+    padding: 0px 12px;
+}
+
+.img-desenvolvedor .img-dev {
+    max-width: 256px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*HABILIDADE*/
+.habilidade {
+    background: var(--color-cinza);
+}
+
+.container-skill {
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.texto-skill {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.skills {
+    text-align: center;
+    padding-top: 6px 0;
+    color: var--(--color-texto);
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bold;
+    background-color: var(--color-amarelo);
+}
+
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    90% {
+        width: 90%
+    }
+
+}
+
+.css {
+    width: 65%;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    65% {
+        width: 65%
+    }
+
+}
+
+.js {
+    width: 40%;
+    animation: js 2s;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+        width: 40%
+    }
+
+}
+
+.bootstrap {
+    width: 80%;
+    animation: bootstrap 2s;
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    80% {
+        width: 80%
+    }
+
+}
+
+.php {
+    width: 15%;
+    animation: php 2s;
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    15% {
+        width: 15%
+    }
+
+}
+
+.sql {
+    width: 55%;
+    animation: sql 2s;
+}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+
+    55% {
+        width: 55%
+    }
+
+}
+
+.ps {
+    width: 75%;
+    animation: ps 2s;
+}
+
+@keyframes ps {
+    0% {
+        width: 0%;
+    }
+
+    75% {
+        width: 75%
+    }
+
+}
+
+.xd {
+    width: 45%;
+    animation: xd 2s;
+}
+
+@keyframes xd {
+    0% {
+        width: 0%;
+    }
+
+    45% {
+        width: 45%
+    }
+
+}
+
+@media(max-width: 1080px) {
+    .container-desenvolvedor {
+        max-width: 1080px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .texto-sobre-desenvolvedor {
+        padding-top: 6px;
+        text-align: center;
+    }
+}

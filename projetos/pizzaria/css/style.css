@@ -262,6 +262,7 @@ img {
 }
 
 @media(max-width: 1024px) {
+
     /*CARDAPIO PEDIDO*/
     .container-cardapio-pedido {
         max-width: 960px;
