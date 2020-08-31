@@ -1,0 +1,10 @@
+.btn-add{
+    background-color: #EF7917;
+    color: #ffffff;
+}
+
+.btn-add:hover{
+    background-color: #EF7917;
+    color: #252525;
+    background-color: #ff9641;
+}
